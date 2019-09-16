@@ -1,0 +1,21 @@
+.form__main {
+  margin-top: 18px;
+}
+
+.form__notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 680px;
+}
+
+.form__notes > input {
+  width: 98%;
+  height: 2.2rem;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 18px;
+  border: 0;
+  font-size: 20px;
+  padding: 5px;
+}

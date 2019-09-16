@@ -1,0 +1,11 @@
+.main__page {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 85%;
+  height: 250px;
+}
+
+.main__page_content {
+  background: #cbe2f4;
+  height: 70vh;
+}
