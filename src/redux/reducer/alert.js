@@ -1,15 +1,15 @@
-import { SHOW_ALERT_TEXT, OPEN_ALERT } from "../const";
+import { OPEN_ALERT, IS_VALID_ALERT } from "../const";
 
 const initialState = {
   text: "Вы успешно довалили новую заметку!",
-  // isValid: true,
+  isValid: false,
   isOpen: false
   // id: 1
 };
 
 export const alertState = (state = initialState, { type, payload }) => {
   switch (type) {
-    case SHOW_ALERT_TEXT:
+    case IS_VALID_ALERT:
       return {
         ...state,
         isValid: !state.false

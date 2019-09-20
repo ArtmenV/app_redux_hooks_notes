@@ -10,19 +10,33 @@ export const Alert = () => {
   const delAlert = () => dispatch(openAlert());
 
   const style = [styles.alert__main];
-  if (alertText.isOpen) {
-    style.push(styles.succes);
+  // if (alertText.isOpen) {
+  //   style.push(styles.succes);
+  // }
+  if (alertText.isValid) {
+    style.push(styles.fail);
   }
 
   let showText = alertText.isOpen ? (
-    <div className={style.join(" ")}>
-      <div className={styles.alert__main_succes}>
-        <span>{alertText.text}</span>
+    alertText.isValid ? (
+      <div className={style.join(" ")}>
+        <div className={styles.alert__main_succes}>
+          <span>{alertText.text}</span>
+        </div>
+        <button className={styles.alert__main_button} onClick={delAlert}>
+          &times;
+        </button>
       </div>
-      <button className={styles.alert__main_button} onClick={delAlert}>
-        &times;
-      </button>
-    </div>
+    ) : (
+      <div className={style.join(" ")}>
+        <div className={styles.alert__main_fail}>
+          <span>Вы ввели некоректную заметку</span>
+        </div>
+        <button className={styles.alert__main_button} onClick={delAlert}>
+          &times;
+        </button>
+      </div>
+    )
   ) : null;
 
   return showText;

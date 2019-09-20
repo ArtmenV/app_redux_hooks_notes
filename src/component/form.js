@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { addNotes } from "../redux/action/index.js";
 import { useDispatch } from "react-redux";
 import styles from "./form.module.css";
-import { openAlert } from "../redux/action/index";
+import { openAlert, isValidAlert } from "../redux/action/index";
 
 export const Form = () => {
   const [value, setValue] = useState("");
@@ -17,7 +17,7 @@ export const Form = () => {
     console.log(notes, "form");
     dispatch(addNotes(notes));
     // const valid = value === '' ?
-    dispatch(openAlert());
+    value === "" ? dispatch(isValidAlert()) : dispatch(openAlert());
     setValue("");
   };
 
