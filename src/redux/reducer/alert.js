@@ -1,14 +1,24 @@
-import { SHOW_ALERT_TEXT } from "../const";
+import { SHOW_ALERT_TEXT, OPEN_ALERT } from "../const";
 
 const initialState = {
   text: "Вы успешно довалили новую заметку!",
-  show: true
+  // isValid: true,
+  isOpen: false
+  // id: 1
 };
 
 export const alertState = (state = initialState, { type, payload }) => {
   switch (type) {
     case SHOW_ALERT_TEXT:
-      return state.text;
+      return {
+        ...state,
+        isValid: !state.false
+      };
+    case OPEN_ALERT:
+      return {
+        ...state,
+        isOpen: !state.isOpen
+      };
     default:
       return state;
   }

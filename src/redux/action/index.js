@@ -5,7 +5,10 @@ import {
   REMOVE_NOTES,
   ADD_IMPORTANT,
   VALID_NOTES,
-  SHOW_ALERT_TEXT
+  SHOW_ALERT_TEXT,
+  DELETE_ALERT,
+  IS_VALID_ALERT,
+  OPEN_ALERT
 } from "../const";
 
 export const increment = id => {
@@ -43,9 +46,15 @@ export const addImportant = id => {
   };
 };
 
-export const addIsValidNotes = () => {
+export const isValidAlert = () => {
   return {
-    type: VALID_NOTES
+    type: IS_VALID_ALERT
+  };
+};
+
+export const openAlert = () => {
+  return {
+    type: OPEN_ALERT
   };
 };
 
