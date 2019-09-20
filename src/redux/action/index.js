@@ -3,7 +3,9 @@ import {
   DECREMENT,
   ADD_NOTES,
   REMOVE_NOTES,
-  ADD_IMPORTANT
+  ADD_IMPORTANT,
+  VALID_NOTES,
+  SHOW_ALERT_TEXT
 } from "../const";
 
 export const increment = id => {
@@ -38,5 +40,17 @@ export const addImportant = id => {
   return {
     type: ADD_IMPORTANT,
     payload: id
+  };
+};
+
+export const addIsValidNotes = () => {
+  return {
+    type: VALID_NOTES
+  };
+};
+
+export const showAlertText = () => {
+  return {
+    type: SHOW_ALERT_TEXT
   };
 };

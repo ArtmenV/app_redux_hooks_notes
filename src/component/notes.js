@@ -51,10 +51,3 @@ export const Notes = () => {
     </>
   );
 };
-
-// // const buttons = button.map(({ name, label }) => {
-// //   const isActive = props.filter === name;
-// //   const clazz = isActive ? "btn-info" : "btn-outline-secondary";
-// //   return ( className={`btn ${clazz}`}
-
-// let important = notes.important === true ? 'important' : ''

@@ -18,10 +18,7 @@ export const Notes = (state = initialState, { type, payload }) => {
         ...item,
         important: item.id === payload ? !item.important : item.important
       }));
-    // const item = state.filter(note => note.id === payload);
-    // const changeItem = { ...item, important: true };
-    // state.filter(note => note.id !== payload);
-    // return [...state, changeItem];
+
     default:
       return state;
   }

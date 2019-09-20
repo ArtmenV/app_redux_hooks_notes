@@ -4,6 +4,7 @@ import { Notes } from "./notes";
 import { increment, decrement } from "../redux/action/index";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./main.module.css";
+import { Alert } from "./alert";
 
 export const Home = () => {
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ export const Home = () => {
           {counter}
           <button onClick={_increment}>+</button>
           <button onClick={increase}>-</button>
+          <Alert />
           <Form />
           <Notes />
         </div>
