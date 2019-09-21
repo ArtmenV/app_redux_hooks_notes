@@ -6,15 +6,16 @@
 
 .notes__list_item {
   display: flex;
+  flex-direction: start;
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  width: 98%;
   font-size: 20px;
-  padding: 8px;
+  padding: 0px 15px 0px 10px;
   border-radius: 5px;
   border: 1px solid rgba(4, 154, 209, 0.6);
-  margin-bottom: 5px;
-  margin-right: 40px;
+  margin-bottom: 12px;
 }
 
 .notes__list_button_important {
@@ -23,8 +24,8 @@
   style: none;
   color: white;
   margin: 8px 8px;
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
   border-radius: 10px;
   border-width: 0;
   border-radius: 5px;
@@ -36,12 +37,16 @@
   style: none;
   color: red;
   margin: 8px 8px;
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
   border-radius: 10px;
   background-color: #fff;
   border-width: 0;
   border-radius: 5px;
   border: 1px solid rgba(4, 154, 209, 0.6);
   cursor: pointer;
+}
+
+ul {
+  padding: 0 0 0 5px;
 }

@@ -8,6 +8,8 @@ export const Nav = () => {
       <div className={styles.logo}>
         <h2>Artmen007</h2>
       </div>
+      {/* <div className={styles.nav__style}></div>
+      <div className={styles.nav__styleki}></div> */}
       <div>
         <ul className={styles.nav__main_navigation}>
           <li>

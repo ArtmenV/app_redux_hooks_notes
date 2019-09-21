@@ -4,8 +4,15 @@
   max-width: 85%;
   height: 250px;
 }
+hr {
+  margin: 25px 0;
+  text-align: center;
+  border: none; /* Убираем границу */
+  background: #66f2ff; /* Цвет линии */
+  color: red; /* Цвет линии для IE6-7 */
+  height: 3px; /* Толщина линии */
+}
 
-.main__page_content {
-  background: #cbe2f4;
-  height: 70vh;
+h1 {
+  font-family: Calibri;
 }

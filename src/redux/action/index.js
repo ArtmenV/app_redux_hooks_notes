@@ -1,6 +1,4 @@
 import {
-  INCREMENT,
-  DECREMENT,
   ADD_NOTES,
   REMOVE_NOTES,
   ADD_IMPORTANT,
@@ -10,20 +8,6 @@ import {
   IS_VALID_ALERT,
   OPEN_ALERT
 } from "../const";
-
-export const increment = id => {
-  return {
-    type: INCREMENT,
-    payload: id
-  };
-};
-
-export const decrement = id => {
-  return {
-    type: DECREMENT,
-    payload: id
-  };
-};
 
 export const addNotes = notes => {
   return {

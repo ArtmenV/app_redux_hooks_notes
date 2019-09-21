@@ -19,8 +19,6 @@ export const Notes = () => {
     <>
       <ul>
         {notes.map(note => {
-          console.log(note);
-          console.log(note.important);
           const style = [styles.notes__list_item];
           if (note.important === true) {
             style.push(styles.important);

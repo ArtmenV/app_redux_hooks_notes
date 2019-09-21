@@ -12,10 +12,9 @@
 .form__notes > input {
   width: 98%;
   height: 2.2rem;
-  border-radius: 8px;
-  outline: none;
-  font-weight: 18px;
-  border: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(4, 154, 209, 0.6);
+  font-weight: 16px;
   font-size: 20px;
-  padding: 5px;
+  padding: 5px 10px;
 }
