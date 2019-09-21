@@ -2,11 +2,10 @@ import {
   ADD_NOTES,
   REMOVE_NOTES,
   ADD_IMPORTANT,
-  VALID_NOTES,
   SHOW_ALERT_TEXT,
-  DELETE_ALERT,
   IS_VALID_ALERT,
-  OPEN_ALERT
+  OPEN_ALERT,
+  CALCULATE_NOTES
 } from "../const";
 
 export const addNotes = notes => {
@@ -43,8 +42,8 @@ export const openAlert = () => {
   };
 };
 
-export const showAlertText = () => {
-  return {
-    type: SHOW_ALERT_TEXT
-  };
-};
+// export const calculateNotes = () => {
+//   return {
+//     type: CALCULATE_NOTES
+//   };
+// };

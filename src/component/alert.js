@@ -41,5 +41,3 @@ export const Alert = () => {
 
   return showText;
 };
-
-/*   */

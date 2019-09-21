@@ -25,7 +25,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: #0090ff;
+  background-color: rgb(100, 240, 255);
   padding: 0;
   transition: 1s;
   color: white;
@@ -41,7 +41,7 @@
 .fail {
   display: flex;
   width: 100%;
-  background-color: red;
+  background-color: rgb(255, 111, 111);
   padding: 0;
   transition: 1s;
   justify-content: space-between;

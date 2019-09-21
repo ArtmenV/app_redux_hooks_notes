@@ -3,6 +3,7 @@ import { addNotes } from "../redux/action/index.js";
 import { useDispatch } from "react-redux";
 import styles from "./form.module.css";
 import { openAlert, isValidAlert } from "../redux/action/index";
+// import { calculateNotes } from "../redux/action/index";
 
 export const Form = () => {
   const [value, setValue] = useState("");
@@ -20,6 +21,7 @@ export const Form = () => {
     dispatch(openAlert());
     value === "" ? dispatch(isValidAlert(false)) : dispatch(isValidAlert(true));
     setValue("");
+    // dispatch(calculateNotes());
   };
 
   return (

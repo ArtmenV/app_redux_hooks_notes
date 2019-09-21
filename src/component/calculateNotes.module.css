@@ -1,0 +1,10 @@
+.calculate__notes {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 640px) {
+  .calculate__notes {
+    font-size: 1rem;
+  }
+}

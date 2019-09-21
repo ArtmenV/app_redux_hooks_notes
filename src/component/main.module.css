@@ -4,6 +4,12 @@
   max-width: 85%;
   height: 250px;
 }
+
+.main__head {
+  display: flex;
+  justify-content: space-between;
+}
+
 hr {
   margin: 25px 0;
   text-align: center;
