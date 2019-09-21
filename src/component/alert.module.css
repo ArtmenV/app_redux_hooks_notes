@@ -1,19 +1,13 @@
 .alert__main {
   display: flex;
   display: none;
-  transition: 1s;
-  justify-content: space-between;
-  color: white;
-  background-color: rgba(4, 154, 209, 0.6);
-  font-weight: 700;
-  padding: 0 10px;
-  margin: 25px;
-  align-items: center;
-  border: 1px solid rgba(4, 154, 209, 0.6);
-  border-width: 0;
-  border-radius: 5px;
-  letter-spacing: 2px;
 }
+
+.visible {
+  display: block;
+  display: flex;
+}
+
 .alert__main_button {
   color: red;
   margin: 8px 8px;
@@ -28,13 +22,39 @@
 }
 
 .succes {
-  display: block;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #0090ff;
+  margin: 15px 25px;
+  padding: 0;
   transition: 1s;
+  color: white;
+  font-weight: 700;
+  padding: 0 10px;
+  margin: 25px;
+  align-items: center;
+  border: 1px solid rgba(4, 154, 209, 0.6);
+  border-width: 0;
+  border-radius: 5px;
+  letter-spacing: 2px;
 }
 
 .fail {
-  background-color: red;
-  display: block;
   display: flex;
+  width: 100%;
+  background-color: red;
+  margin: 15px 25px;
+  padding: 0;
+  transition: 1s;
+  justify-content: space-between;
+  color: white;
+  font-weight: 700;
+  padding: 0 10px;
+  margin: 25px;
+  align-items: center;
+  border: 1px solid rgba(4, 154, 209, 0.6);
+  border-width: 0;
+  border-radius: 5px;
+  letter-spacing: 2px;
 }

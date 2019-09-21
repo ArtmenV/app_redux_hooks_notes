@@ -17,7 +17,8 @@ export const Form = () => {
     console.log(notes, "form");
     dispatch(addNotes(notes));
     // const valid = value === '' ?
-    value === "" ? dispatch(isValidAlert()) : dispatch(openAlert());
+    dispatch(openAlert());
+    value === "" ? dispatch(isValidAlert(false)) : dispatch(isValidAlert(true));
     setValue("");
   };
 

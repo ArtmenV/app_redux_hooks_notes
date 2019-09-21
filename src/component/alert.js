@@ -10,43 +10,36 @@ export const Alert = () => {
   const delAlert = () => dispatch(openAlert());
 
   const style = [styles.alert__main];
-  // if (alertText.isOpen) {
-  //   style.push(styles.succes);
-  // }
-  if (alertText.isValid) {
-    style.push(styles.fail);
+  if (alertText.isOpen) {
+    style.push(styles.visible);
+  }
+
+  const validStyle = [styles.alert__isValid];
+
+  if (alertText.isValid === false) {
+    validStyle.push(styles.fail);
+  } else {
+    validStyle.push(styles.succes);
   }
 
   let showText = alertText.isOpen ? (
-    alertText.isValid ? (
-      <div className={style.join(" ")}>
-        <div className={styles.alert__main_succes}>
-          <span>{alertText.text}</span>
-        </div>
+    <div className={style.join(" ")}>
+      <div className={validStyle.join(" ")}>
+        <span>
+          {alertText.isValid === true ? (
+            alertText.text
+          ) : (
+            <span>Чтобы добавить заметку введите текст</span>
+          )}
+        </span>
         <button className={styles.alert__main_button} onClick={delAlert}>
           &times;
         </button>
       </div>
-    ) : (
-      <div className={style.join(" ")}>
-        <div className={styles.alert__main_fail}>
-          <span>Вы ввели некоректную заметку</span>
-        </div>
-        <button className={styles.alert__main_button} onClick={delAlert}>
-          &times;
-        </button>
-      </div>
-    )
+    </div>
   ) : null;
 
   return showText;
 };
 
-/*  <div className={style.join(" ")}>
-        <div className={styles.alert__main_fail}>
-          <span>Вы ввели некоректную заметку</span>
-        </div>
-        <button className={styles.alert__main_button} onClick={delAlert}>
-          &times;
-        </button>
-      </div> */
+/*   */

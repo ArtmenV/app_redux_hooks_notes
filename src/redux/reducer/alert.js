@@ -12,7 +12,7 @@ export const alertState = (state = initialState, { type, payload }) => {
     case IS_VALID_ALERT:
       return {
         ...state,
-        isValid: !state.false
+        isValid: payload
       };
     case OPEN_ALERT:
       return {

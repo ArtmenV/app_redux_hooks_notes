@@ -46,9 +46,10 @@ export const addImportant = id => {
   };
 };
 
-export const isValidAlert = () => {
+export const isValidAlert = data => {
   return {
-    type: IS_VALID_ALERT
+    type: IS_VALID_ALERT,
+    payload: data
   };
 };
 
