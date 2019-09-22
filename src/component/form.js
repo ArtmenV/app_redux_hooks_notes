@@ -15,7 +15,6 @@ export const Form = () => {
       text: value,
       id: Math.random()
     };
-    console.log(notes, "form");
     dispatch(addNotes(notes));
     // const valid = value === '' ?
     dispatch(openAlert());

@@ -4,6 +4,7 @@ import { Notes } from "./notes";
 import styles from "./main.module.css";
 import { Alert } from "./alert";
 import { Calculate } from "./calculateNotes";
+import { SearchInput } from "./searchNotes";
 
 export const Home = () => {
   return (
@@ -12,7 +13,10 @@ export const Home = () => {
         <div className={styles.main__page_content}>
           <div className={styles.main__head}>
             <h1>Мои дела на день</h1>
-            <Calculate />
+            <div>
+              <Calculate />
+              <SearchInput />
+            </div>
           </div>
           <Alert />
           <Form />

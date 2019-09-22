@@ -22,3 +22,9 @@ hr {
 h1 {
   font-family: Calibri;
 }
+
+.main__search_filter {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: auto;
+}

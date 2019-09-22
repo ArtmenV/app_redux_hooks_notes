@@ -5,7 +5,8 @@ import {
   SHOW_ALERT_TEXT,
   IS_VALID_ALERT,
   OPEN_ALERT,
-  CALCULATE_NOTES
+  CALCULATE_NOTES,
+  SEARCH_NOTES
 } from "../const";
 
 export const addNotes = notes => {
@@ -42,8 +43,9 @@ export const openAlert = () => {
   };
 };
 
-// export const calculateNotes = () => {
-//   return {
-//     type: CALCULATE_NOTES
-//   };
-// };
+export const searchNotes = name => {
+  return {
+    type: SEARCH_NOTES,
+    payload: name
+  };
+};

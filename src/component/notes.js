@@ -5,7 +5,14 @@ import { useSelector, useDispatch } from "react-redux";
 
 export const Notes = () => {
   const notes = useSelector(state => state.Notes);
+  const searchNotes = useSelector(state => state.searchNotes);
 
+  let filterNotes = notes.filter(notes =>
+    notes.text
+      .toLowerCase()
+      .trim()
+      .includes(searchNotes.toLowerCase().trim())
+  );
   const dispatch = useDispatch();
 
   const deleteAction = id => {
@@ -18,7 +25,7 @@ export const Notes = () => {
   return (
     <>
       <ul>
-        {notes.map(note => {
+        {filterNotes.map(note => {
           const style = [styles.notes__list_item];
           if (note.important === true) {
             style.push(styles.important);
