@@ -1,11 +1,9 @@
 .form__main {
-  margin-top: 18px;
+  margin: 2rem 0;
 }
 
 .form__notes {
   display: flex;
-  justify-content: center;
-  align-items: center;
   min-width: 680px;
 }
 

@@ -8,10 +8,11 @@
 .main__head {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 hr {
-  margin: 25px 0;
+  margin: 15px 0;
   text-align: center;
   border: none; /* Убираем границу */
   background: #66f2ff; /* Цвет линии */
@@ -21,10 +22,4 @@ hr {
 
 h1 {
   font-family: Calibri;
-}
-
-.main__search_filter {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-left: auto;
 }

@@ -13,7 +13,7 @@ export const Home = () => {
         <div className={styles.main__page_content}>
           <div className={styles.main__head}>
             <h1>Мои дела на день</h1>
-            <div>
+            <div className={styles.main__search_filter}>
               <Calculate />
               <SearchInput />
             </div>
